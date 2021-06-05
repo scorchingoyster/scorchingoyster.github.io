@@ -1,0 +1,27 @@
+works:
+- {
+  title: 'Evalueserve',
+  subtitle: 'UX + Consulting',
+  folder: 'evs',
+  file: 'works/evs.html'
+}
+- {
+  title: 'Carolina Digital Repository',
+  subtitle: 'The Two-Year Journey of a Digital Migration',
+  folder: 'cdr',
+  file: 'works/cdr.html'
+}
+
+social:
+- {
+  icon: 'linkedin',
+  link: 'https://www.linkedin.com/in/hydong'
+}
+- {
+  icon: 'github',
+  link: 'https://github.com/scorchingoyster'
+}
+- {
+  icon: 'reddit',
+  link: 'https://www.reddit.com/user/YidonHongski'
+}

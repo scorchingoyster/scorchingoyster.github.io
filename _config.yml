@@ -29,10 +29,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+  sass_dir: assets/css
 
 defaults:
   - 
@@ -61,3 +62,5 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+livereload: true
