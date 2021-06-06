@@ -1,0 +1,14 @@
+section {
+
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+	&.grey {
+		background-color: grey;
+	}
+
+	& > div {
+		width: $default-width;
+	}
+}

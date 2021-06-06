@@ -1,3 +1,28 @@
-.main-nav {
-	list-style: none;
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: $default-width;
+	}
+	.logo {
+		display: inline-block;
+		max-width: 150px;
+		img {
+			width: 50%;
+		}
+	}
+
+	.main-nav {
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+
 }
