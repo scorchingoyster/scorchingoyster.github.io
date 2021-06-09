@@ -1,7 +1,10 @@
 header {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 10px 0;
+	border-bottom: 2px solid whitesmoke;
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -10,9 +13,9 @@ header {
 	}
 	.logo {
 		display: inline-block;
-		max-width: 150px;
+		max-width: 50px;
 		img {
-			width: 50%;
+			width: 100%;
 		}
 	}
 

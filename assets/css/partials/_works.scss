@@ -4,11 +4,34 @@ section {
   align-items: center;
   justify-content: center;
 
+  margin: 3rem 0;
+
 	&.grey {
-		background-color: grey;
+		background-color: whitesmoke;
+		padding: 3rem 0;
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey; 
 	}
 
 	& > div {
-		width: $default-width;
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		max-width: $default-width;
+
+		& > .text {
+			max-width: $text-width;
+		}
+
+		& > .two-col {
+			display: flex;
+			justify-content: space-evenly;
+			font-size: 0.8rem;
+			& > * {
+				max-width: $default-width/2;
+			}
+		}
+
 	}
 }
