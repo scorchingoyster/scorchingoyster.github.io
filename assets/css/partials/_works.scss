@@ -10,18 +10,19 @@ section {
 
 	&.grey {
 		background-color: whitesmoke;
-		border-top: 1px solid $border-grey;
-		border-bottom: 1px solid $border-grey; 
+		border-top: 1px solid darken(whitesmoke, 10%);
+		border-bottom: 1px solid darken(whitesmoke, 10%); 
 	}
 
 	& > div {
 		display: flex;
 		flex-direction: column;
-
 		align-items: center;
 		max-width: $default-width;
 
 		.graphics {
+		 	display: flex;
+		  justify-content: center;
 			margin: 1rem 0;
 			img {
 				max-width: 100%;
@@ -39,7 +40,7 @@ section {
 				line-height: 1.5;
 				span {
 					font-weight: 700;
-					font-size: $font-size;
+					font-size: 0.8rem;
 					color: $base-grey;
 				}
 			}
@@ -48,9 +49,39 @@ section {
 				padding: 0.05px;
 				font-size: 0.8rem;
 				h3 {
-					color: $base-grey;
+					color: darken($base-grey, 10%);
 				}
 			}
 		}
+		
 	}
+	// CDR
+
+	&.cdr-banner {
+		background: linear-gradient(0deg, white, #F2EADD);
+	}
+
+	&.cdr-navy {
+		background-color: $cdr-navy;
+		border-top: 1px solid lighten($cdr-navy, 20%);
+		border-bottom: 1px solid lighten($cdr-navy, 20%);
+		color: white;
+		.text h2 span {
+			color: lighten($cdr-navy,60%);
+		}
+	}
+
+	ul {
+		list-style: none;
+		li::before {
+		  content: "\2022";  
+		  color: #017FAF;
+		  font-weight: bold;
+		  display: inline-block;
+		  width: 1em;
+		  margin-left: -2em;
+		}
+	}
+
+	// end CDR
 }

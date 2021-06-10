@@ -62,5 +62,3 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-livereload: true
