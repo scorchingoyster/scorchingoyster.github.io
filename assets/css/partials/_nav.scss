@@ -38,7 +38,7 @@ header {
 				a {
 					color: $base-grey;
 					text-decoration: none;
-					transition: color 0.2s ease;
+					@include color-transition
 					&:hover {
 						color: $link;
 						border-bottom: 2px solid lighten($link,50%);

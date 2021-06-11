@@ -1,3 +1,11 @@
+.divider::after {
+	display: flex;
+	justify-content: center;
+	color: $base-grey;
+	font-size: 2rem;
+	content: url('/assets/img/cdr/divider.png')
+}
+
 section {
 
 	display: flex;
@@ -51,14 +59,30 @@ section {
 				h3 {
 					color: darken($base-grey, 10%);
 				}
+				// need fix: media query
+				.cols {
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					padding: 0;
+					& > li:not(li:last-child) {
+						margin-bottom: 1rem;
+					}
+				}
 			}
 		}
 		
 	}
 	// CDR
 
+	em {
+		background: linear-gradient(180deg, rgba(255,255,255,0), $cdr-baige);
+
+		font-style: normal;
+	}
+
 	&.cdr-banner {
-		background: linear-gradient(0deg, white, #F2EADD);
+		background: linear-gradient(0deg, rgba(255,255,255,0), $cdr-baige);
 	}
 
 	&.cdr-navy {
@@ -69,11 +93,18 @@ section {
 		.text h2 span {
 			color: lighten($cdr-navy,60%);
 		}
+		a {
+			color: white;
+			@include color-transition
+			&:hover {
+				color: lighten($cdr-navy,60%);
+			}
+		}
 	}
 
 	ul {
 		list-style: none;
-		li::before {
+		&:not(.cols) li::before {
 		  content: "\2022";  
 		  color: #017FAF;
 		  font-weight: bold;
