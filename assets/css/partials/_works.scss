@@ -31,9 +31,15 @@ section {
 		.graphics {
 		 	display: flex;
 		  justify-content: center;
+		  flex-wrap: wrap;
 			margin: 1rem 0;
 			img {
 				max-width: 100%;
+			}
+			figcaption {
+				font-size: 0.8rem;
+				font-weight: 600;
+				opacity: 0.6;
 			}
 		}
 
@@ -76,13 +82,13 @@ section {
 	// CDR
 
 	em {
-		background: linear-gradient(180deg, rgba(255,255,255,0), $cdr-baige);
+		background: linear-gradient(180deg, rgba(255,255,255,0), $cdr-beige);
 
 		font-style: normal;
 	}
 
 	&.cdr-banner {
-		background: linear-gradient(0deg, rgba(255,255,255,0), $cdr-baige);
+		background: linear-gradient(0deg, rgba(255,255,255,0), $cdr-beige);
 	}
 
 	&.cdr-navy {
@@ -99,6 +105,16 @@ section {
 			&:hover {
 				color: lighten($cdr-navy,60%);
 			}
+		}
+		blockquote {
+			margin: 2rem 1.5rem;
+			padding: 1rem 0;
+			border-top: 1px solid lighten($cdr-navy,15%);
+			border-bottom: 1px solid lighten($cdr-navy,15%);
+			font: 1.5rem Merriweather regular;
+			line-height: 1.5;
+			text-align: center;
+			color: $cdr-beige;
 		}
 	}
 
