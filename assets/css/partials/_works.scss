@@ -1,6 +1,7 @@
 .divider::after {
 	display: flex;
 	justify-content: center;
+	margin: 1rem 0;
 	color: $base-grey;
 	font-size: 2rem;
 	content: url('/assets/img/cdr/divider.png')
@@ -38,7 +39,6 @@ section {
 			}
 			figcaption {
 				font-size: 0.8rem;
-				font-weight: 600;
 				opacity: 0.6;
 			}
 		}
@@ -111,7 +111,7 @@ section {
 			padding: 1rem 0;
 			border-top: 1px solid lighten($cdr-navy,15%);
 			border-bottom: 1px solid lighten($cdr-navy,15%);
-			font: 1.4rem Merriweather regular;
+			font: 1.2rem MerriweatherItalic;
 			line-height: 1.5;
 			text-align: center;
 			color: $cdr-beige;
@@ -120,9 +120,10 @@ section {
 
 	ul {
 		list-style: none;
+		// Nested li titles
 		&:not(.cols) li::before {
 		  content: "\2022";  
-		  color: #017FAF;
+		  color: lighten($cdr-navy, 30%);
 		  font-weight: bold;
 		  display: inline-block;
 		  width: 1em;
