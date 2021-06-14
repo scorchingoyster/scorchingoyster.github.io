@@ -28,57 +28,58 @@ section {
 		flex-direction: column;
 		align-items: center;
 		max-width: $default-width;
-
-		.graphics {
-		 	display: flex;
-		  justify-content: center;
-		  flex-wrap: wrap;
-			margin: 1rem 0;
-			img {
-				max-width: 100%;
-			}
-			figcaption {
-				font-size: 0.8rem;
-				opacity: 0.6;
-			}
-		}
-
-		.text {
-			max-width: $text-width;
-			h1 {
-				font-size: 1.7em;
-			}
-			h1, h2, h3, h4, h5, h6 {
-				display: flex;
-				flex-direction: column;
-				line-height: 1.5;
-				span {
-					font-weight: 700;
-					font-size: 0.8rem;
-					color: $base-grey;
-				}
-			}
-			.list {
-				margin: 0.1rem 0;
-				padding: 0.05px;
-				font-size: 0.8rem;
-				h3 {
-					color: darken($base-grey, 10%);
-				}
-				// need fix: media query
-				.cols {
-					display: flex;
-					justify-content: space-between;
-					flex-wrap: wrap;
-					padding: 0;
-					& > li:not(li:last-child) {
-						margin-bottom: 1rem;
-					}
-				}
-			}
 		}
 		
+	.graphics {
+	 	display: flex;
+	  justify-content: center;
+	  flex-wrap: wrap;
+		margin: 1rem 0;
+		img {
+			max-width: 100%;
+		}
+		figcaption {
+			font-size: 0.8rem;
+			opacity: 0.6;
+		}
 	}
+
+	.text {
+		max-width: $text-width;
+		h1 {
+			font-size: 1.7em;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			display: flex;
+			flex-direction: column;
+			line-height: 1.5;
+			span {
+				font-weight: 700;
+				font-size: 0.8rem;
+				color: $base-grey;
+			}
+		}
+		.list {
+			margin: 0.1rem 0;
+			padding: 0.05px;
+			font-size: 0.8rem;
+			h3 {
+				color: darken($base-grey, 10%);
+			}
+			// need fix: media query
+			.cols {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding: 0;
+				& > li:not(li:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+
+
 	// CDR
 
 	em {
@@ -86,6 +87,8 @@ section {
 
 		font-style: normal;
 	}
+
+
 
 	&.cdr-banner {
 		background: linear-gradient(0deg, rgba(255,255,255,0), $cdr-beige);
@@ -99,13 +102,7 @@ section {
 		.text h2 span {
 			color: lighten($cdr-navy,60%);
 		}
-		a {
-			color: white;
-			@include color-transition
-			&:hover {
-				color: lighten($cdr-navy,60%);
-			}
-		}
+
 		blockquote {
 			margin: 2rem 1.5rem;
 			padding: 1rem 0;
@@ -116,6 +113,26 @@ section {
 			text-align: center;
 			color: $cdr-beige;
 		}
+		a {
+			color: lighten($link,30%);
+			text-decoration: none;
+			@include color-transition;
+			&:hover {
+				color: lighten($link,50%);
+				border-bottom: 2px solid lighten($cdr-navy,15%);
+			}
+			&:active {
+				color: $link;
+			}
+		}
+	}
+
+	&.cdr-photo {
+		height: 300px;
+		background-image: url("/assets/img/cdr/fall-tower.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: inset 0 0 1rem 0.1rem lighten($base-font, 15%);
 	}
 
 	ul {

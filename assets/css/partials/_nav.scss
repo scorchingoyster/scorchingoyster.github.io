@@ -38,10 +38,13 @@ header {
 				a {
 					color: $base-grey;
 					text-decoration: none;
-					@include color-transition
+					@include color-transition;
 					&:hover {
 						color: $link;
 						border-bottom: 2px solid lighten($link,50%);
+					}
+					&:active {
+						color: $base-font;
 					}
 				}
 			}
