@@ -162,7 +162,7 @@ permalink: /works/cdr
 			</figure>
 		</div>
 
-		<div class="graphics zoom">
+		<div class="graphics">
 			<figure>
 				<div>
 					<img src="{{ '/assets/img/cdr/full-persona.png' }}" alt="">
@@ -288,15 +288,9 @@ permalink: /works/cdr
 		</div>
 
 		<div class="text">
-			<p>Here's a rundown of the main design effort for the DCR platform:</p>
-			<ul>
-				<li>Excluding group brainstorming exercises, there were five major iterations of low to high fidelity designs across 20+ screens.</li>
-			</ul>
+			<p>Along with internal testing, feedback gathering, and other relevant activities, the redesign of DCR spanned across <em>five iterations, with over 20+ screens from wireframes to mockups of various fidelity levels</em>.</p>
 		</div>
 
-			
-
-			
 	</div>
 </section>
 
@@ -307,7 +301,39 @@ permalink: /works/cdr
 				<span>DESIGN</span>
 				A Better Access Control System
 			</h2>
+			<p>At one point, our lead developer suggested to me that the UX for the admin interface could also be further improved &mdash; it dawned on me that we've been focusing so much on the public side of things that we neglected the needs of our colleagues who use the system most frequently.</p>
+
+			<p>After some back and forth discussions, we came up with two universal rules for the new system logic:</p>
+
+			<ul>
+				<li><em>Objects will inherit the access or viewing controls from the previous level</em> if the controls are the same or more restrictive.</li>
+				<li><em>Accessing and viewing the objects are different layers</em>; users can still read the description and see the metadata, or see a low quality copy, even if they can’t access all the content.</li>
+			</ul>
 		</div>
+
+		<div class="graphics">
+			<figure>
+				<div>
+					<img src="{{ '/assets/img/cdr/permission-scheme.png' }}" alt="">
+					<img src="{{ '/assets/img/cdr/inheritance-example.png' }}" alt="">
+				</div>	
+			</figure>
+		</div>
+
+		<div class="text">
+			<p>Given the sprawling content and the amount of nested directories, I prioritized one goal for our design explorations: <em>make it easy for users to understand how access level changes through an intuitive control scheme</em>.</p>
+		</div>
+
+		<div class="graphics screen">
+			<figure>
+				<div>
+					<img src="{{ '/assets/img/cdr/access-control-1.png' }}" alt="">
+					<img src="{{ '/assets/img/cdr/access-control-2.png' }}" alt="">
+				</div>	
+				<figcaption>Early explorations on setting and previewing patron access level for a directory</figcaption>
+			</figure>
+		</div>
+
 	</div>
 </section>
 
