@@ -1,12 +1,4 @@
-.divider::after {
-	display: flex;
-	justify-content: center;
-	margin: 1rem 0;
-	color: $base-grey;
-	font-size: 2rem;
-	content: url('/assets/img/cdr/divider.png')
-}
-
+// top-level work section
 section {
 
 	display: flex;
@@ -18,12 +10,19 @@ section {
 
   color: $base-font;
 
+  hr {
+  	// todo: add a custom divider
+  }
+
+  // grey background
 	&.grey {
 		background-color: whitesmoke;
 		border-top: 1px solid darken(whitesmoke, 10%);
 		border-bottom: 1px solid darken(whitesmoke, 10%); 
 	}
 
+	// direct descendant container
+	// for restricting content max width
 	& > div {
 		display: flex;
 		flex-direction: column;
@@ -32,6 +31,7 @@ section {
 		max-width: $default-width;
 	}
 		
+	// second-level graphics container
 	.graphics {
 	 	display: flex;
 	  justify-content: center;
@@ -41,7 +41,11 @@ section {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			// all images go into the div container inside figure
+			// for responsive wrapping
 			div {
+				max-width: $default-width;
 				display: flex;
 				justify-content: center;
 				flex-wrap: wrap;
@@ -53,7 +57,6 @@ section {
 
 		img {
 			max-width: 100%;
-			object-fit: contain;
 		}
 
 		figcaption {
@@ -61,7 +64,9 @@ section {
 			opacity: 0.7;
 		}
 
+		// subset of .graphics class that contain screens only
 		&.screen {
+			// todo: need media query to dynamically adjust image width
 			img {
 				max-width: 500px;
 				margin: 0.8rem;
@@ -73,6 +78,7 @@ section {
 				}
 			}
 
+			// subset of .screen styling for dark background
 			&.alt {
 				img {
 					margin: 0.8rem;
@@ -83,6 +89,8 @@ section {
 		}
 	}
 
+
+	// second-level text container
 	.text {
 		max-width: $text-width;
 
@@ -93,7 +101,9 @@ section {
 		h1, h2, h3, h4, h5, h6 {
 			display: flex;
 			flex-direction: column;
+
 			line-height: 1.5;
+			// category header
 			span {
 				font-weight: 700;
 				font-size: 0.8rem;
@@ -101,6 +111,8 @@ section {
 			}
 		}
 
+
+		// smaller type list section
 		.list {
 			margin: 0.1rem 0;
 			padding: 0.05px;
@@ -108,7 +120,9 @@ section {
 			h3 {
 				color: darken($base-grey, 10%);
 			}
-			// need fix: media query
+
+			// todo: media query to fix weird stacking 
+			// multi-column lists
 			.cols {
 				display: flex;
 				justify-content: space-between;
@@ -122,29 +136,34 @@ section {
 	}
 
 
-	// CDR
+	// --- CDR specific styling ---
+
 
 	em {
 		background: linear-gradient(180deg, rgba(255,255,255,0), $cdr-beige);
-
 		font-style: normal;
 	}
 
 
-
+	// cdr banner background
 	&.cdr-banner {
 		background: linear-gradient(0deg, rgba(255,255,255,0), $cdr-beige);
+		h1 {
+			color: $cdr-navy;
+		}
 	}
 
+	// cdr style navy blue background
 	&.cdr-navy {
 		background-color: $cdr-navy;
 		border-top: 1px solid lighten($cdr-navy, 20%);
 		border-bottom: 1px solid lighten($cdr-navy, 20%);
 		color: white;
-		.text h2 span {
+		h2 span {
 			color: lighten($cdr-navy,60%);
 		}
 
+		// quote for cdr navy blue styling
 		blockquote {
 			margin: 2rem 1.5rem;
 			padding: 1rem 0;
@@ -155,6 +174,8 @@ section {
 			text-align: center;
 			color: $cdr-beige;
 		}
+
+		// override default link style for better visibility
 		a {
 			color: lighten($link,30%);
 			text-decoration: none;
@@ -169,6 +190,8 @@ section {
 		}
 	}
 
+
+	// full width UNC tower background 
 	&.cdr-photo {
 		height: 300px;
 		background-image: url("/assets/img/cdr/fall-tower.jpg");
@@ -177,6 +200,7 @@ section {
 		box-shadow: inset 0 0 1rem 0.1rem lighten($base-font, 15%);
 	}
 
+	// cdr style list dots
 	ul {
 		list-style: none;
 		// Nested li titles
@@ -190,5 +214,5 @@ section {
 		}
 	}
 
-	// end CDR
+	// --- end CDR ---
 }
