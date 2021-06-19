@@ -1,3 +1,6 @@
+
+
+
 // top-level work section
 section {
 
@@ -78,6 +81,13 @@ section {
 				}
 			}
 
+			@media screen and (max-width: $text-width) {
+				// reset screenshot image width to shrink for responsive
+				img {
+					max-width: 100%;
+				}
+			}
+
 			// subset of .screen styling for dark background
 			&.alt {
 				img {
@@ -87,6 +97,7 @@ section {
 				}
 			}
 		}
+
 	}
 
 
@@ -121,7 +132,6 @@ section {
 				color: darken($base-grey, 10%);
 			}
 
-			// todo: media query to fix weird stacking 
 			// multi-column lists
 			.cols {
 				display: flex;
@@ -130,6 +140,12 @@ section {
 				padding: 0;
 				& > li:not(li:last-child) {
 					margin-bottom: 1rem;
+				}
+			}
+			@media screen and (max-width: $text-width) {
+				//make smaller list columns stack vertically
+				.cols {
+					flex-direction: column;
 				}
 			}
 		}
@@ -214,5 +230,6 @@ section {
 		}
 	}
 
-	// --- end CDR ---
+	// --- end CDR --- 
 }
+
