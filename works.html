@@ -1,21 +1,19 @@
 ---
 layout: master
-title: "Welcome to my works"
+title: "Hong's Works"
 permalink: /works
 ---
 
-<h1>Works</h1>
-
 <section>
+  <h1>Works</h1>
   {% for work in site.data.settings.works %}
     <div class="thumb-container">
-      <a href="{{ site.github.url }}/{{ work.file }}">
-        <div class="thumb-unit" data-folder="{{ site.github.url }}/works/{{ work.folder }}" style="background-image: url({{ site.github.url }}/assets/img/work/{{ work.folder }}/thumb.jpg)">
+      <a href="{{ site.url }}/{{ work.file }}">
+        <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">
           <div class="thumb-overlay">
             <h2>{{ work.title }}</h2>
             <h3>{{ work.subtitle }}</h3>
           </div>
-        </div>
       </a>
     </div>
   {% endfor %}

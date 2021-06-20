@@ -1,12 +1,12 @@
 <header id="top">
 	<nav class="main-nav">
 			<a class="logo" href="{{ '/' | relative_url }}">
-				<img src="{{ '/assets/img/logo.png' }}" alt="">
+				<img src="{{ site.url }}/assets/img/logo.png" alt="">
 			</a>
 		<ul class="menu">
-			<li><a href="">WORKS</a></li>
+			<li><a href="{{ site.url }}/works" class="nav-link">WORKS</a></li>
 			<!-- <li><a href="">WRITING</a></li> -->
-			<li><a href="">ABOUT ME</a></li>
+			<li><a href="{{ site.url }}/about" class="nav-link">ABOUT ME</a></li>
 		</ul>
 	</nav>
 </header>

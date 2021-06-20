@@ -12,16 +12,20 @@ works:
   file: 'works/cdr.html'
 }
 
-social:
+socials:
 - {
   icon: 'linkedin',
   link: 'https://www.linkedin.com/in/hydong'
+}
+- {
+  icon: 'reddit',
+  link: 'https://www.reddit.com/user/YidonHongski'
 }
 - {
   icon: 'github',
   link: 'https://github.com/scorchingoyster'
 }
 - {
-  icon: 'reddit',
-  link: 'https://www.reddit.com/user/YidonHongski'
+  icon: 'blog',
+  link: 'https://hirc.substack.com/'
 }
