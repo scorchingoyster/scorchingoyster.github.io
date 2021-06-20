@@ -6,6 +6,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	color: $base-font;
 	.main {
 		flex-grow: 1;
 	}
@@ -25,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: Merriweather;
 }
 
-.main a {
+.main a:not(.thumb-link) {
 	color: $link;
 	text-decoration: none;
 	@include color-transition;

@@ -4,17 +4,19 @@ title: "Hong's Works"
 permalink: /works
 ---
 
-<section>
-  <h1>Works</h1>
-  {% for work in site.data.settings.works %}
-    <div class="thumb-container">
-      <a href="{{ site.url }}/{{ work.file }}">
-        <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">
+<section class="works">
+  <h1>My professional works and whatnot</h1>
+  <div class="thumbnails">
+    {% for work in site.data.settings.works %}
+      <div class="thumb-container {{ work.folder }}">
+        <a href="{{ site.url }}/{{ work.file }}" class="thumb-link">
           <div class="thumb-overlay">
             <h2>{{ work.title }}</h2>
             <h3>{{ work.subtitle }}</h3>
           </div>
-      </a>
-    </div>
-  {% endfor %}
+          <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 </section>
