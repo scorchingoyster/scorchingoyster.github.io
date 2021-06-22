@@ -5,6 +5,8 @@ header {
 	align-items: center;
 	padding: 1rem 1rem;
 	border-bottom: 0.1rem solid whitesmoke;
+	box-shadow: 0 1px 0.4rem rgba(0,0,0,0.05);
+	z-index: 99;
 	nav {
 		display: flex;
 		justify-content: space-between;
