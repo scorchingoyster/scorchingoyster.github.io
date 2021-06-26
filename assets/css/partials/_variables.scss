@@ -2,6 +2,15 @@
 	transition: color 0.2s ease;
 }
 
+@mixin responsive-expand {
+	@media screen and (max-width: $text-width) {
+		// reset screenshot image width to shrink for responsive
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 // typography
 $font-size: 20px;
 $line-height: 1.5;

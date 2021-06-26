@@ -26,6 +26,24 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: Merriweather;
 }
 
+hr {
+	width: 350px;
+	height: 5px;
+	overflow: visible;
+	margin: 2rem auto;
+	border: none;
+	border-top: 3px double lighten($base-grey,30%);
+	text-align: center;
+}
+
+hr:after {
+    background: #fff;
+    content: '⋅';
+    padding: 0 5px;
+    position: relative;
+    top: -16px;
+}
+
 .main a:not(.thumb-link) {
 	color: $link;
 	text-decoration: none;
@@ -38,3 +56,4 @@ h1,h2,h3,h4,h5,h6 {
 		color: darken($link, 50%);
 	}
 }
+
