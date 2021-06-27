@@ -10,12 +10,13 @@ permalink: /works
     <p>I am a designer by training, but I aspire to not be bounded by this identity. <br>I am a problem solver above anything else.</p>
     <p>No matter how this world changes, there will always be human problems. And I am here to help us solve them &mdash; one step at a time.</p>
   </div>
+  <!-- todo: make overlay text always appear as a caption in mobile view -->
   <div class="thumbnails">
     {% for work in site.data.settings.works %}
       <div class="thumb-container {{ work.folder }}">
         <a href="{{ site.url }}/{{ work.file }}" class="thumb-link">
           <div class="thumb-overlay">
-            <h2>{{ work.title }}</h2>
+            <h2>{{ work.title }}, {{ work.year }}</h2>
             <h3>{{ work.subtitle }}</h3>
           </div>
           <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">

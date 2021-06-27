@@ -203,6 +203,11 @@ section {
 				max-width: 600px;
 			}
 		}
+		&.i700 {
+			img {
+				max-width: 700px;
+			}
+		}
 
 		img {
 			max-width: 100%;
@@ -215,7 +220,7 @@ section {
 		}
 
 		// subset of .graphics class that contain screens only
-		&.screen {
+		&.bordered {
 			img {
 				margin: 0.8rem;
 				border: 1px solid darken(whitesmoke, 10%);
@@ -248,7 +253,7 @@ section {
 		}
 
 		// subset of .graphics class that contain generic graphis
-		&.contained {
+		&.general {
 			@include responsive-expand;
 		}
 	}

@@ -2,30 +2,35 @@ works:
 - {
   title: 'Evalueserve',
   subtitle: 'Research, Design, and Consulting',
+  year: 2019,
   folder: 'evs',
   file: 'works/evs.html'
 }
 - {
   title: 'Carolina Digital Repository',
   subtitle: 'The Two-Year Journey of a Digital Migration',
+  year: 2017,
   folder: 'cdr',
   file: 'works/cdr.html'
 }
 - {
   title: 'nVisium',
   subtitle: 'Designing for Application Security',
+  year: 2014,
   folder: 'nv',
   file: 'works/nv.html'
 }
 - {
   title: 'Munis Delivery App',
   subtitle: 'My First User Experience Role',
+  year: 2013,
   folder: 'tyler',
   file: 'works/tyler.html'
 }
 - {
   title: 'Advanced Structure and Composites Center',
   subtitle: 'A Rebranding Campaign Led by Students',
+  year: 2012,
   folder: 'ascc',
   file: 'works/ascc.html'
 }
