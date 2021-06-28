@@ -208,6 +208,11 @@ section {
 				max-width: 700px;
 			}
 		}
+		&.i1000 {
+			img {
+				max-width: 1000px;
+			}
+		}
 
 		img {
 			max-width: 100%;
@@ -402,6 +407,20 @@ section {
 		color: white;
 		h1 {
 			color: whitesmoke;
+		}
+	}
+
+	// --- end nV
+
+	// --- ASCC specific styling ---
+
+	&.ascc-banner {
+		background-color: #f4eedb;
+		h1 {
+			color: rgb(81,66,68);
+		}
+		video {
+			max-width: 100%;
 		}
 	}
 
