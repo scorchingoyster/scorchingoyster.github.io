@@ -44,16 +44,33 @@ hr:after {
     top: -16px;
 }
 
-.main a:not(.thumb-link) {
-	color: $link;
-	text-decoration: none;
-	@include color-transition;
-	&:hover {
+.main {
+	a:not(.thumb-link) {
 		color: $link;
-		border-bottom: 2px solid lighten($link,50%);
+		text-decoration: none;
+		@include color-transition;
+		&:hover {
+			color: $link;
+			border-bottom: 2px solid lighten($link,50%);
+		}
+		&:active {
+			color: darken($link, 50%);
+		}
 	}
-	&:active {
-		color: darken($link, 50%);
+	ul {
+		list-style: none;
+		// Nested li titles
+		&:not(.cols) li::before {
+		  content: "\2022";  
+		  color: lighten($cdr-navy, 30%);
+		  font-weight: bold;
+		  display: inline-block;
+		  width: 1em;
+		  margin-left: -1.5em;
+		}
+		li {
+			margin: 0.5rem 0;
+		}
 	}
 }
 
@@ -62,4 +79,34 @@ hr:after {
 	justify-content: center;
 	align-items: center;
 	background-color: #efbf53;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 1rem;
+	& > section:first-child {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		img {
+			margin: 0 2rem ;
+			max-width: 200px;
+			border: 2px solid whitesmoke;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 0.2rem darken(whitesmoke, 20%);
+		}
+		& > div {
+			max-width: $text-width;
+		}
+		span {
+			text-decoration: line-through;
+		}
+	}
+	& > section:last-child {
+		max-width: $text-width;
+
+	}
 }

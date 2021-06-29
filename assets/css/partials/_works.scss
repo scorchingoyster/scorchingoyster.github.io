@@ -372,20 +372,6 @@ section {
 		box-shadow: inset 0 0 1rem 0.1rem lighten($base-font, 15%);
 	}
 
-	// cdr style list dots
-	ul {
-		list-style: none;
-		// Nested li titles
-		&:not(.cols) li::before {
-		  content: "\2022";  
-		  color: lighten($cdr-navy, 30%);
-		  font-weight: bold;
-		  display: inline-block;
-		  width: 1em;
-		  margin-left: -2em;
-		}
-	}
-
 	// --- end CDR --- 
 
 	// --- EVS specific styling ---
