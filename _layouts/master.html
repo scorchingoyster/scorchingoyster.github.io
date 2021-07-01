@@ -3,15 +3,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-	<title>{{ page.title }}</title>
-</head>
+{% include head.html %}
 <body>
 	{% include header.html %}
-	<div class="main {{page.class}}">
+	<div class="main {{ page.class }}">
 		{{ content }}
 	</div>
 	{% include footer.html %}
