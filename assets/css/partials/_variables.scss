@@ -7,6 +7,9 @@
 		// reset screenshot image width to shrink for responsive
 		img {
 			max-width: 100%;
+			&:not(img:first-child) {
+				margin-top: 0.8rem;
+			}
 		}
 	}
 }

@@ -20,13 +20,13 @@ works:
   folder: 'nv',
   file: 'works/nv.html'
 }
-# - {
-#   title: 'Munis Delivery App',
-#   subtitle: 'My First User Experience Role',
-#   year: 2013,
-#   folder: 'tyler',
-#   file: 'works/tyler.html'
-# }
+- {
+  title: 'Munis Delivery App',
+  subtitle: 'My First User Experience Role',
+  year: 2013,
+  folder: 'tyler',
+  file: 'works/tyler.html'
+}
 - {
   title: 'Advanced Structure and Composites Center',
   subtitle: 'A Rebranding Campaign Led by Students',
