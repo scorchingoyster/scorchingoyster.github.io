@@ -37,6 +37,10 @@ works:
 
 socials:
 - {
+  icon: 'twitter',
+  link: 'https://twitter.com/thisisnothong'
+}
+- {
   icon: 'linkedin',
   link: 'https://www.linkedin.com/in/hydong'
 }
@@ -52,3 +56,4 @@ socials:
   icon: 'blog',
   link: 'https://hirc.substack.com/'
 }
+
