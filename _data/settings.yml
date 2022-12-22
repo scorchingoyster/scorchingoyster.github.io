@@ -37,6 +37,10 @@ works:
 
 socials:
 - {
+  icon: 'mastodon',
+  link: 'https://hci.social/@hong'
+}
+- {
   icon: 'twitter',
   link: 'https://twitter.com/thisisnothong'
 }
