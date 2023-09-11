@@ -41,10 +41,6 @@ socials:
   link: 'https://hci.social/@hong'
 }
 - {
-  icon: 'twitter',
-  link: 'https://twitter.com/thisisnothong'
-}
-- {
   icon: 'linkedin',
   link: 'https://www.linkedin.com/in/hydong'
 }
