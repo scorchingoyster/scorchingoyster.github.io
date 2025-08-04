@@ -1,17 +1,16 @@
 ---
 layout: master
-title: "Hong's Works"
-permalink: /works
+title: "Hong's Research Works"
+permalink: /research
 ---
 
 <section class="works">
   <div class="intro">
-    <h1>My old design and UX works</h1>
-    <p>I am a designer by training, but I aspired to not be bound by this identity.</p>
+    <h1>My research projects</h1>
+    <p>I am a multi-method researcher, but I enjoy observing people's behaviors.</p>
   </div>
-  <!-- todo: make overlay text always appear as a caption in mobile view -->
   <div class="thumbnails">
-    {% for work in site.data.settings.works %}
+    {% for work in site.data.settings.research %}
       <div class="thumb-container {{ work.folder }}">
         <a href="{{ site.url }}/{{ work.file }}" class="thumb-link">
           <div class="thumb-overlay">

@@ -1,38 +1,47 @@
-works:
+research:
 - {
   title: 'Evalueserve',
   subtitle: 'Research, Design, and Consulting',
   year: 2019,
   folder: 'evs',
-  file: 'works/evs.html'
+  file: 'research/evs.html'
+}
+
+design:
+- {
+  title: 'Evalueserve',
+  subtitle: 'Design and Consulting',
+  year: 2019,
+  folder: 'evs',
+  file: 'design/evs.html'
 }
 - {
   title: 'Carolina Digital Repository',
   subtitle: 'The Two-Year Journey of a Digital Migration',
   year: 2017,
   folder: 'cdr',
-  file: 'works/cdr.html'
+  file: 'design/cdr.html'
 }
 - {
   title: 'nVisium',
   subtitle: 'Designing for Application Security',
   year: 2014,
   folder: 'nv',
-  file: 'works/nv.html'
+  file: 'design/nv.html'
 }
 - {
   title: 'Munis Delivery App',
-  subtitle: 'My First User Experience Role',
+  subtitle: 'My First Journey Into User Experience',
   year: 2013,
   folder: 'tyler',
-  file: 'works/tyler.html'
+  file: design/tyler.html'
 }
 - {
   title: 'Advanced Structure and Composites Center',
   subtitle: 'A Rebranding Campaign Led by Students',
   year: 2012,
   folder: 'ascc',
-  file: 'works/ascc.html'
+  file: 'design/ascc.html'
 }
 
 socials:
@@ -44,16 +53,3 @@ socials:
   icon: 'linkedin',
   link: 'https://www.linkedin.com/in/hydong'
 }
-- {
-  icon: 'reddit',
-  link: 'https://www.reddit.com/user/YidonHongski'
-}
-- {
-  icon: 'github',
-  link: 'https://github.com/scorchingoyster'
-}
-- {
-  icon: 'blog',
-  link: 'https://hirc.substack.com/'
-}
-

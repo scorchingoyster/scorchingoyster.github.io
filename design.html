@@ -1,0 +1,26 @@
+---
+layout: master
+title: "Hong's Design Works"
+permalink: /design
+---
+
+<section class="works">
+  <div class="intro">
+    <h1>My design and UX works</h1>
+    <p>I am a designer by training, but I try to not be bound by this identity.</p>
+  </div>
+  <!-- todo: make overlay text always appear as a caption in mobile view -->
+  <div class="thumbnails">
+    {% for work in site.data.settings.design %}
+      <div class="thumb-container {{ work.folder }}">
+        <a href="{{ site.url }}/{{ work.file }}" class="thumb-link">
+          <div class="thumb-overlay">
+            <h2>{{ work.title }}, {{ work.year }}</h2>
+            <h3>{{ work.subtitle }}</h3>
+          </div>
+          <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
