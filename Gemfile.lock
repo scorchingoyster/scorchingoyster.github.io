@@ -4,6 +4,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     base64 (0.2.0)
+    bigdecimal (3.2.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.8)
     csv (3.3.5)
@@ -52,6 +53,7 @@ GEM
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
@@ -86,9 +88,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bigdecimal
   jekyll (~> 4.4.1)
   jekyll-feed (~> 0.12)
   jekyll-watch
+  logger
   minima (~> 2.5)
   tzinfo (>= 1.2)
   tzinfo-data
