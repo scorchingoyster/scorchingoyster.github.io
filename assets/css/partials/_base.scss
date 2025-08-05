@@ -45,7 +45,8 @@ hr:after {
 }
 
 .main {
-	a:not(.thumb-link) {
+  // lb overrides lightbox a wrapper
+	a:not(.thumb-link):not(.lb) {
 		color: $link;
 		text-decoration: none;
 		@include color-transition;
