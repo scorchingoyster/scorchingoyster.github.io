@@ -60,7 +60,7 @@ hr:after {
 	ul {
 		list-style: none;
 		// Nested li titles
-		&:not(.cols) li::before {
+		&:not(.cols):not(.info) li::before {
 		  content: "\2022";  
 		  color: lighten($cdr-navy, 30%);
 		  font-weight: bold;

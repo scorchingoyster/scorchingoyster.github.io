@@ -13,6 +13,20 @@ research:
   folder: 'explorations',
   file: 'research/explorations.html'
 }
+- {
+  title: 'Carolina Digital Repository',
+  subtitle: 'The Two-Year Journey of a Digital Migration',
+  year: 2017,
+  folder: 'cdr',
+  file: 'research/cdr.html'
+}
+- {
+  title: 'Munis Delivery App',
+  subtitle: 'My First Journey Into User Experience',
+  year: 2013,
+  folder: 'tyler',
+  file: 'research/tyler.html'
+}
 
 design:
 - {
@@ -23,25 +37,11 @@ design:
   file: 'design/evs.html'
 }
 - {
-  title: 'Carolina Digital Repository',
-  subtitle: 'The Two-Year Journey of a Digital Migration',
-  year: 2017,
-  folder: 'cdr',
-  file: 'design/cdr.html'
-}
-- {
   title: 'nVisium',
   subtitle: 'Designing for Application Security',
   year: 2014,
   folder: 'nv',
   file: 'design/nv.html'
-}
-- {
-  title: 'Munis Delivery App',
-  subtitle: 'My First Journey Into User Experience',
-  year: 2013,
-  folder: 'tyler',
-  file: 'design/tyler.html'
 }
 - {
   title: 'Advanced Structure and Composites Center',
