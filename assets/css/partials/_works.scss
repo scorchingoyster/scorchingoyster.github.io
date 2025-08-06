@@ -36,6 +36,9 @@
 		&:hover {
 			box-shadow: 0 4px 0.8rem darken(whitesmoke, 10%);
 		}
+    img {
+      max-width: 100%;
+    }
 	}
 
 	.thumb-link {

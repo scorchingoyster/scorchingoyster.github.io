@@ -9,9 +9,9 @@ class: about
   <section class="intro">
     <img src="{{ site.url }}/assets/img/photo.jpg" alt="">
     <div>
-      <h1>Hello, this is Hong <s>Kong</s>.</h1>
+      <h1>Hello, this is Hong <s style="color: rgb(176, 176, 176);">Kong</s></h1>
       <p>I'm pursuing my Ph.D. at the <a href="https://ist.psu.edu/" target="_blank">Informatics Program of Penn State University</a>, working with <a href="https://priyakumar.org/" target="_blank">Dr. Priya Kumar</a> in the Living Privacy Research Group.</p>
-      <p>As a researcher, I am in the intersections of privacy, learning, and human-computer interaction &mdash; though I often find myself peeking into other disciplines as well. The world is just too fascinating.</p>
+      <p>As a researcher, I'm in the intersections of human-computer interaction, learning, and privacy &mdash; though I often find myself peeking into other disciplines as well. The world is just too <span class="bouncy-text">fascinating</span>.</p>
       <p>Need to get in touch? Feel free to email <strong>hongyi.dong [at] psu [dot] edu</strong>. <br> <small>(My questionable life advice is also available upon request.)</small></p>
     </div>
   </section>
@@ -19,7 +19,7 @@ class: about
   <hr>
 
   <section>
-    <p>Some fun facts about me and this site:</p>
+    <p>Some fun facts about me and this site: <span style="color: white;">ミルクティーがめちゃ好き!</span></p>
     <ul>
       <li>I'm <a href="{{ site.url }}/design" target="_blank">a media artist and a user experience designer</a> by training.</li>
       <li>The site logo is based on <a href="https://en.wiktionary.org/wiki/%E5%AE%8F" target="_blank">the middle character</a> of my name.</li>
@@ -27,4 +27,17 @@ class: about
       <li>I wrote this site using <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Enjoy browsing without <a href="https://www.eff.org/issues/do-not-track" target="_blank">being tracked</a>!</li>
     </ul>
   </section>
+  <p style="color: white; font-size: 3px;">TGlmZSBpcyBtb3N0bHkgZnJvdGggYW5kIGJ1YmJsZSwNClR3byB0aGluZ3Mgc3RhbmQgbGlrZSBzdG9uZS4NCktpbmRuZXNzIGluIGFub3RoZXIncyB0cm91YmxlLA0KQ291cmFnZSBpbiB5b3VyIG93bi4=</p>
 </div>
+
+<script>
+  const text = document.querySelector('.bouncy-text');
+  const letters = text.textContent.split('');
+  text.textContent = ''; 
+
+  letters.forEach(letter => {
+    const span = document.createElement('span');
+    span.textContent = letter;
+    text.appendChild(span);
+  });
+</script>
