@@ -141,3 +141,17 @@ hr:after {
     100% { transform: translateY(0); }
   }
 }
+
+.general {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1rem;
+  padding: 1.5rem 0;
+  & > * {
+    max-width: 900px;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+}
