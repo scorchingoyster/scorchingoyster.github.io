@@ -1,5 +1,12 @@
 research:
 - {
+  title: 'A Privacy Literacy Toolkit',
+  subtitle: 'Empowering Librarians and Communities',
+  year: '2023-?',
+  folder: 'privacy-toolkit',
+  file: 'research/privacy-toolkit.html'
+}
+- {
   title: 'Youth Online Community Interactions and Conversations',
   subtitle: 'Sharing Stories and Making Sense of Privacy',
   year: 2024,
