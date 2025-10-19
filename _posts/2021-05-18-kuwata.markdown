@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "The Story of Kuwata Misato"
+date:   2022-05-22
+categories: jekyll update
+---
+
+# {{ page.title }}
+
+<span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+
+
+> **十本の指は黄金の山**
+
+“The ten fingers are a mountain of gold.”
+
+This is the lesson that Misao’s mother had once taught her in the distant past, before most people alive today were even born. Unbeknownst to either of them, in the middle of a historical pandemic nearly a century later, this quote would make its way across time and space to encourage the many stricken by the unprecedented event.
+
+![kuwata.jpeg]({{site.baseurl}}/assets/img/blog/kuwata.jpeg)
+
+[Kuwata Misao’s (桑田ミサオ) story](https://www.zoomjapan.info/2021/03/13/the-tale-of-granny-mochi-2021-kuwata-misao-93-year-old-confectioner/) was featured in an episode of The Professionals in 2020. At the old age of ninety-five years old, Misao is still working diligently as a confectioner, serving about fifty thousand handmade sasa-mochi rice cakes to her nearby communities — a small business that her “younger” self had started a little over three decades ago.
+
+(笹餅, sasa-mochi: Sweet rice cakes wrapped in bamboo leaves)
+
+The documentary portrays her lifestyle in a vibrant tone (which, I’m sure, is partly thanks to the skillful cinematography and editing). With her mother’s recipe and her own two hands, she has instilled a new meaning into her retirement by continuing to provide for herself and her family.
+
+Day after day, she would slowly bike to the nearby woods to collect bamboo leaves, for which she would then haul back to her home kitchen to be rinsed thoroughly, before she proceeds to slow boil the red beans to mush, so on and so forth... Despite the monotonous daily routine, there is genuine sense of care displayed throughout this process, in an almost stereotypical Japanese workmanship manner.
+
+When reading about this story, some may frown upon the idea of a nonagenarian engaging in manual labor as a livelihood — it’s definitely not my intention to glorify her struggle to care for her son and daughter-in-law, who are both cancer-ridden, as well as the failings of the Japanese social system to provide for her family. (But that’s a complicated and separate topic in its own. I also don’t have enough insight to write anything meaningful about the topic, so let’s set that aside for now.)
+
+Nevertheless, I find it awe-inspiring that Misao had chosen to march against the hardship by heeding her mother’s teaching.
+
+Whenever the difficulties in life weigh on our shoulders, especially in times of great uncertainty, we often grow sullen and unable to recognize that there is usually a way to pull ourselves up by our bootstraps if we just make good use of the assets we already have.
+
+(Misao’s mother is a symbol of steadfastness in her own way: She was a single mother who raised four children during the war-crazed years of the [Shōwa](https://en.wikipedia.org/wiki/Sh%C5%8Dwa_(1926%E2%80%931989)) period.)
+
+Here is the full quote of her mother’s words, roughly translated:
+
+> _The ten fingers are a mountain of gold. As long as you keep those fingers moving, you will never starve. So keeping learning how to make things, whatever it may be._

@@ -4,6 +4,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: ""
 
+permalink: /blog/:title/
+
 plugins:
   - jekyll-feed
 

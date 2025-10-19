@@ -67,3 +67,7 @@ socials:
   icon: 'linkedin',
   link: 'https://www.linkedin.com/in/hydong'
 }
+- {
+  icon: 'blog',
+  link: '/blog'
+}
