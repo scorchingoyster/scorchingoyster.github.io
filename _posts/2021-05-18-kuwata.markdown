@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "The Story of Kuwata Misato"
+title:  "The Story of Kuwata Misao"
 date:   2022-05-22
-categories: jekyll update
+categories: story life-lesson
 ---
 
 # {{ page.title }}

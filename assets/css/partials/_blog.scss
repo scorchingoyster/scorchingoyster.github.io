@@ -17,8 +17,18 @@
   width: 100%;
   & > a {
     margin: 0.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border: none !important;
+  }
+  .post-date {
+    display: inline-block;
+    font-size: 1rem;
+    color: #666;
+    border: 1px solid #f3f3f3;
+    background-color: #f9f9f9;
+    width: 125px;
+    text-align: center;
+    margin-right: 0.25rem;
   }
 }
 
@@ -61,5 +71,8 @@
     padding-left: 1rem;
     margin: 1rem 0;
     color: #666;
+  }
+  blockquote + blockquote {
+    margin-top: -1.25rem;
   }
 }
