@@ -14,7 +14,7 @@ I was at an alumni meet & greet event the other day, and I asked a question that
 
 Obviously, I couldn't get a straight answer, but this advice caught my attention: "Look for consistent ways to scale your learning."
 
-It is a great idea and I did appreciate the advice. But after thinking about it for an unnecessarily length of time, I thought I'd rephrase it as this question: **What can you do better everyday?**
+It is a great idea and I did appreciate the advice. But after thinking about it for an unnecessarily long time, I thought I'd rephrase it as this question: **What can you do better everyday?**
 
 And I don't mean that better as in learning how to code or design better or "network with 10 strangers in your industry" kind of better. I meant more along the line of being better as _a person_.
 

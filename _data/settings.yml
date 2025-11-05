@@ -6,13 +6,13 @@ research:
   folder: 'privacy-toolkit',
   file: 'research/privacy-toolkit.html'
 }
-- {
-  title: 'Youth Online Community Interactions and Conversations',
-  subtitle: 'Sharing Stories and Making Sense of Privacy',
-  year: 2024,
-  folder: 'online-communities',
-  file: 'research/online-communities.html'
-}
+# - {
+#   title: 'Youth Online Community Interactions and Conversations',
+#   subtitle: 'Sharing Stories and Making Sense of Privacy',
+#   year: 2024,
+#   folder: 'online-communities',
+#   file: 'research/online-communities.html'
+# }
 - {
   title: 'Explorations and Other Projects',
   subtitle: 'Ideas in the Making',
