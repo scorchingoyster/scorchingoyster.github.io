@@ -18,7 +18,7 @@ This is the lesson that Misao’s mother had once taught her in the distant past
 
 ![kuwata.jpeg]({{site.baseurl}}/assets/img/blog/kuwata.jpeg)
 
-[Kuwata Misao’s (桑田ミサオ) story](https://www.zoomjapan.info/2021/03/13/the-tale-of-granny-mochi-2021-kuwata-misao-93-year-old-confectioner/) was featured in an episode of The Professionals in 2020. At the old age of ninety-five years old, Misao is still working diligently as a confectioner, serving about fifty thousand handmade sasa-mochi rice cakes to her nearby communities — a small business that her “younger” self had started a little over three decades ago.
+[Kuwata Misao’s (桑田ミサオ) story](https://www.zoomjapan.info/2021/03/13/the-tale-of-granny-mochi-2021-kuwata-misao-93-year-old-confectioner/){:target="_blank"} was featured in an episode of The Professionals in 2020. At the old age of ninety-five years old, Misao is still working diligently as a confectioner, serving about fifty thousand handmade sasa-mochi rice cakes to her nearby communities — a small business that her “younger” self had started a little over three decades ago.
 
 (笹餅, sasa-mochi: Sweet rice cakes wrapped in bamboo leaves)
 

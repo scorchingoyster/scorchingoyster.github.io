@@ -25,7 +25,7 @@ What pushed me over the edge was a train wreck of a few months in 2021: once aga
 
 Fool me twice, shame on corporate nonsense.
 
-(Lesson learned too late: Other than people who have selflessly cared for you, [don’t trust anyone who claims that you’re part of their “family.”](https://hbr.org/2021/10/the-toxic-effects-of-branding-your-workplace-a-family) A real family won’t throw you under the bus just to save their face.)
+(Lesson learned too late: Other than people who have selflessly cared for you, [don’t trust anyone who claims that you’re part of their “family.”](https://hbr.org/2021/10/the-toxic-effects-of-branding-your-workplace-a-family){:target="_blank"} A real family won’t throw you under the bus just to save their face.)
 
 The idea of getting a PhD had been floating in the edge of my mind for some years. While I did keep up with some research here and there, I wasn’t so sure about pursuing it then — not with uncertain prospects and budget cuts during COVID.
 
