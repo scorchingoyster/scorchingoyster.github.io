@@ -4,14 +4,14 @@
 		<ul>
 			{% for social in site.data.settings.socials %}
 			<li>
-				<a href="{{ social.link }}" class="social-icon">
-					<img src="{{ site.url }}/assets/img/icons/{{ social.icon }}.svg" alt="">
+					<a href="{% if social.link contains '://' %}{{ social.link }}{% else %}{{ social.link | relative_url }}{% endif %}" class="social-icon" aria-label="{{ social.label }}">
+						<img src="{{ '/assets/img/icons/' | append: social.icon | append: '.svg' | relative_url }}" alt="">
 				</a>
 			</li>
 			{% endfor %}
 		</ul>
     <a href="#top">Back to top ↑</a>
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 			<img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
 		</a>
 	</div>

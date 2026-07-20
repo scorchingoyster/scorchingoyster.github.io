@@ -1,6 +1,5 @@
-title: Hong's site
-description: >- # this means to ignore newlines until "baseurl:"
-# todo
+title: Hongyi Dong
+description: Hongyi Dong's research, design work, and writing.
 baseurl: ""
 url: ""
 
@@ -10,6 +9,13 @@ plugins:
   - jekyll-feed
 
 encoding: UTF-8
+strict_front_matter: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
 
 sass:
   sass_dir: assets/css

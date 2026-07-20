@@ -1,0 +1,17 @@
+<div class="thumbnails">
+  {% for work in include.works %}
+    <div class="thumb-container {{ work.folder }}">
+      <a href="{{ work.file | relative_url }}" class="thumb-link">
+        <div class="thumb-overlay">
+          <h2>{{ work.title }}, {{ work.year }}</h2>
+          <h3>{{ work.subtitle }}</h3>
+        </div>
+        <img
+          src="{{ '/assets/img/works/' | append: work.folder | append: '/thumb.svg' | relative_url }}"
+          alt=""
+          width="400"
+          height="150">
+      </a>
+    </div>
+  {% endfor %}
+</div>

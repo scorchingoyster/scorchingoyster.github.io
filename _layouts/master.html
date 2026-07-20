@@ -6,10 +6,10 @@
 {% include head.html %}
 <body>
 	{% include header.html %}
-	<div class="main {{ page.class }}">
+	<main class="main {{ page.class }}" id="main-content">
 		{{ content }}
-	</div>
+	</main>
 	{% include footer.html %}
-  <script src="{{ site.url }}/assets/js/lightbox-plus-jquery.min.js"></script>
+  {% if page.lightbox %}<script src="{{ '/assets/js/lightbox-plus-jquery.min.js' | relative_url }}" defer></script>{% endif %}
 </body>
 </html>

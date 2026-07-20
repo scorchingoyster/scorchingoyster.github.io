@@ -9,17 +9,5 @@ permalink: /research
     <h1>My research projects</h1>
     <p>I do all kinds of research... but human behaviors are just fascinating.</p>
   </div>
-  <div class="thumbnails">
-    {% for work in site.data.settings.research %}
-      <div class="thumb-container {{ work.folder }}">
-        <a href="{{ site.url }}/{{ work.file }}" class="thumb-link">
-          <div class="thumb-overlay">
-            <h2>{{ work.title }}, {{ work.year }}</h2>
-            <h3>{{ work.subtitle }}</h3>
-          </div>
-          <img src="{{ site.url }}/assets/img/works/{{ work.folder }}/thumb.svg">
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+  {% include work-cards.html works=site.data.settings.research %}
 </section>

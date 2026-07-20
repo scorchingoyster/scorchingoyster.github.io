@@ -2,13 +2,20 @@
 layout: work
 title: "Overview | Advanced Structures and Composites Center"
 permalink: /design/ascc
+lightbox: false
 ---
 
 <section class="ascc-banner">
 	<div>
-		<video src="{{ site.url }}/assets/img/works/ascc/logo-animations.mp4" autoplay loop width="640"></video>
+			<video src="{{ '/assets/img/works/ascc/logo-animations.mp4' | relative_url }}" autoplay loop muted playsinline width="640" aria-label="Advanced Structures and Composites Center logo animations"></video>
 	</div>
-</section>
+	</section>
+
+<script>
+	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		document.querySelector('.ascc-banner video').pause();
+	}
+</script>
 
 
 <section>
@@ -23,7 +30,7 @@ permalink: /design/ascc
 		<div class="graphics bordered i700">
 			<figure>
 				<div>
-					<img src="{{ site.url }}/assets/img/works/ascc/style-guide.jpg" alt="">
+					<img src="{{ '/assets/img/works/ascc/style-guide.jpg' | relative_url }}" alt="">
 				</div>
 			</figure>
 		</div>

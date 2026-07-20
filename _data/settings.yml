@@ -61,13 +61,16 @@ design:
 socials:
 - {
   icon: 'mastodon',
+  label: 'Mastodon',
   link: 'https://mastodon.social/@leslied'
 }
 - {
   icon: 'linkedin',
+  label: 'LinkedIn',
   link: 'https://www.linkedin.com/in/hydong'
 }
 - {
   icon: 'blog',
+  label: 'Blog',
   link: '/blog'
 }

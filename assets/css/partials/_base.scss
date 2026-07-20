@@ -17,13 +17,32 @@ body {
 
 html {
 	font-size: $font-size !important;
-	font-family: FiraSans;
+	font-family: FiraSans, sans-serif;
 	line-height: $line-height;
 }
 
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: Merriweather;
+	font-family: Merriweather, serif;
+}
+
+:focus-visible {
+	outline: 3px solid $link;
+	outline-offset: 3px;
+}
+
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -5rem;
+	z-index: 100;
+	padding: 0.5rem 0.75rem;
+	background: white;
+	color: $base-font;
+
+	&:focus {
+		top: 0.5rem;
+	}
 }
 
 hr {
@@ -108,7 +127,8 @@ hr:after {
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		img {
+		& > img {
+			height: auto;
 			margin: 0 2rem ;
 			max-width: 200px;
 			border: 2px solid whitesmoke;
@@ -130,9 +150,16 @@ hr:after {
       transition: transform 0.3s ease;
     }
 
-  .bouncy-text span:hover {
-    animation: bounce 0.6s ease;
-  }
+	  .bouncy-text span:hover {
+	    animation: bounce 0.6s ease;
+	  }
+
+	@media (prefers-reduced-motion: reduce) {
+		.bouncy-text span {
+			animation: none;
+			transition: none;
+		}
+	}
 
   @keyframes bounce {
     0%   { transform: translateY(0); }
