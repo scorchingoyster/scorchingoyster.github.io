@@ -10,7 +10,7 @@ class: about
 	  <img src="{{ '/assets/img/photo.jpg' | relative_url }}" alt="Portrait of Hongyi Dong" width="977" height="925">
     <div>
       <h1>Hello, this is Hong <s style="color: rgb(176, 176, 176);">Kong</s></h1>
-      <p>I'm pursuing my Ph.D. at the <a href="https://ist.psu.edu/" target="_blank" rel="noopener noreferrer">Informatics Program of Penn State University</a>, working with <a href="https://priyakumar.org/" target="_blank" rel="noopener noreferrer">Dr. Priya Kumar</a> in the Living Privacy Research Group.</p>
+      <p>I'm pursuing my Ph.D. at the <a href="https://ist.psu.edu/" target="_blank" rel="noopener noreferrer">Informatics Program of Penn State University</a>, working with <a href="https://priyakumar.org/" target="_blank" rel="noopener noreferrer">Dr. Priya Kumar</a> in the <span class="tooltip-trigger" tabindex="0" data-tooltip="Sociotechnical Privacy and Agency Research in Context">SPARC</span> Group.</p>
       <p>As a researcher, I'm in the intersections of human-computer interaction, learning, and privacy &mdash; though I often find myself peeking into other disciplines as well. The world is just too <span class="bouncy-text">fascinating</span>.</p>
       <p>Need to get in touch? Feel free to email <strong>hongyi.dong [at] psu [dot] edu</strong>. <br> <small>(My questionable life advice is also available upon request.)</small></p>
     </div>
@@ -19,11 +19,12 @@ class: about
   <hr>
 
   <section>
-    <p>Some fun facts about me and this site:</p>
+    <p>Some fun(?) facts about me and this site:</p>
     <ul>
-		<li>I'm <a href="{{ '/design' | relative_url }}">a media artist and a user experience designer</a> by training.</li>
-      <li>The site logo is based on <a href="https://en.wiktionary.org/wiki/%E5%AE%8F" target="_blank" rel="noopener noreferrer">the middle character</a> of my name.</li>
-      <li>Check out my curated <a href="https://docs.google.com/spreadsheets/d/1g-R5302tCFN-sGU4lJhqIUqWg7XGcDHFb_Vzn4asZX4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Privacy/Security + HCI talks repository</a>.</li>
+		  <!-- <li>I'm <a href="{{ '/design' | relative_url }}">a media artist and a user experience designer</a> by training.</li> -->
+      <li>The logo is based on <a href="https://en.wiktionary.org/wiki/%E5%AE%8F" target="_blank" rel="noopener noreferrer">the middle character</a> of my name.</li>
+      <li>This site uses <a href="https://umami.is/" target="_blank">Umami</a> (a "privacy-focused alternative") for analytics.</li>
+      <li>Check out my <a href="https://docs.google.com/spreadsheets/d/1g-R5302tCFN-sGU4lJhqIUqWg7XGcDHFb_Vzn4asZX4/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Privacy/Security + HCI talks repository</a>.</li>
     </ul>
   </section>
   <p style="color: white; opacity: 0.05; font-size: 3px;">TGlmZSBpcyBtb3N0bHkgZnJvdGggYW5kIGJ1YmJsZSwNClR3byB0aGluZ3Mgc3RhbmQgbGlrZSBzdG9uZS4NCktpbmRuZXNzIGluIGFub3RoZXIncyB0cm91YmxlLA0KQ291cmFnZSBpbiB5b3VyIG93bi4=</p>
@@ -39,4 +40,63 @@ class: about
     span.textContent = letter;
     text.appendChild(span);
   });
+
+  const tooltipTrigger = document.querySelector('.tooltip-trigger');
+
+  if (tooltipTrigger) {
+    const tooltip = document.createElement('span');
+    tooltip.id = 'sparc-tooltip';
+    tooltip.className = 'tooltip';
+    tooltip.role = 'tooltip';
+    tooltip.textContent = tooltipTrigger.dataset.tooltip;
+    tooltip.hidden = true;
+    document.body.appendChild(tooltip);
+    tooltipTrigger.setAttribute('aria-describedby', tooltip.id);
+
+    const showTooltip = () => {
+      tooltip.hidden = false;
+
+      const triggerRect = tooltipTrigger.getBoundingClientRect();
+      const tooltipRect = tooltip.getBoundingClientRect();
+      const gap = 8;
+      const viewportMargin = 8;
+      const centeredLeft = triggerRect.left + (triggerRect.width - tooltipRect.width) / 2;
+
+      tooltip.style.left = `${Math.min(
+        window.innerWidth - tooltipRect.width - viewportMargin,
+        Math.max(viewportMargin, centeredLeft)
+      )}px`;
+
+      const positionAbove = triggerRect.top - tooltipRect.height - gap;
+      tooltip.style.top = `${positionAbove >= viewportMargin
+        ? positionAbove
+        : triggerRect.bottom + gap}px`;
+    };
+
+    const hideTooltip = () => {
+      tooltip.hidden = true;
+    };
+
+    tooltipTrigger.addEventListener('pointerenter', showTooltip);
+    tooltipTrigger.addEventListener('pointerleave', hideTooltip);
+    tooltipTrigger.addEventListener('focus', showTooltip);
+    tooltipTrigger.addEventListener('blur', hideTooltip);
+    tooltipTrigger.addEventListener('click', () => {
+      if (tooltip.hidden) {
+        showTooltip();
+      } else {
+        hideTooltip();
+      }
+    });
+    tooltipTrigger.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        hideTooltip();
+        tooltipTrigger.blur();
+      }
+    });
+    window.addEventListener('resize', () => {
+      if (!tooltip.hidden) showTooltip();
+    });
+    window.addEventListener('scroll', hideTooltip, { passive: true });
+  }
 </script>

@@ -31,6 +31,31 @@ h1,h2,h3,h4,h5,h6 {
 	outline-offset: 3px;
 }
 
+.tooltip-trigger {
+	border-bottom: 1px dotted currentColor;
+	cursor: help;
+}
+
+.tooltip {
+	position: fixed;
+	z-index: 1000;
+	width: max-content;
+	max-width: calc(100vw - 1rem);
+	padding: 0.4rem 0.6rem;
+	border-radius: 0.25rem;
+	background: $base-font;
+	color: white;
+	font-size: 0.7rem;
+	line-height: 1.4;
+	text-align: center;
+	box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+}
+
+.tooltip[hidden] {
+	display: none;
+}
+
 .skip-link {
 	position: absolute;
 	left: 1rem;
