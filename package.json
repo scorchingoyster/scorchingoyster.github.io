@@ -1,0 +1,17 @@
+{
+  "name": "hongyi-dong-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve --livereload",
+    "netlify": "netlify",
+    "netlify:dev": "netlify dev",
+    "netlify:deploy": "netlify deploy"
+  },
+  "devDependencies": {
+    "netlify-cli": "26.2.0"
+  },
+  "engines": {
+    "node": ">=20.12.2"
+  }
+}
