@@ -70,7 +70,13 @@ socials:
   link: 'https://www.linkedin.com/in/hydong'
 }
 - {
+  icon: 'scholar',
+  label: 'Google Scholar',
+  link: 'https://scholar.google.com/citations?hl=en&user=lzJVIZIAAAAJ'
+}
+- {
   icon: 'blog',
   label: 'Blog',
   link: '/blog'
 }
+

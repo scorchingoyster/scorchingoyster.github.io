@@ -1,0 +1,159 @@
+.theme-toggle {
+	display: inline-grid;
+	place-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding: 0;
+	border: 1px solid lighten($base-grey, 25%);
+	border-radius: 30%;
+	background: transparent;
+	color: $base-grey;
+	font: inherit;
+	font-size: 0.75rem;
+	line-height: 1;
+	cursor: pointer;
+	transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+	&:hover {
+		border-color: $link;
+		color: $link;
+	}
+
+	img {
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+}
+
+.theme-toggle__light,
+[data-theme="dark"] .theme-toggle__dark {
+	display: none;
+}
+
+[data-theme="dark"] .theme-toggle__light {
+	display: inline;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
+
+	body {
+		background-color: #17191c;
+		color: #e5e7eb;
+	}
+
+	.skip-link,
+	header {
+		background-color: #202328;
+		color: #e5e7eb;
+	}
+
+	header {
+		border-bottom-color: #343941;
+		box-shadow: 0 1px 0.4rem rgba(0, 0, 0, 0.35);
+	}
+
+	.logo > img {
+		filter: invert(1);
+	}
+
+	.main-nav ul li a,
+	.theme-toggle {
+		color: #c4c9d1;
+	}
+
+	.main-nav ul li a:active {
+		color: white;
+	}
+
+	.main a:not(.thumb-link):not(.lb) {
+		color: #8fc7e8;
+	}
+
+	hr {
+		border-top-color: #555b65;
+	}
+
+	hr::after {
+		background: #17191c;
+	}
+
+	.about {
+		background-color: #17191c;
+		background-image: none;
+	}
+
+	.tooltip {
+		background: #f3f4f6;
+		color: #17191c;
+	}
+
+	.works {
+		.thumb-container {
+			border-color: #3d424b;
+			box-shadow: 0 2px 0.4rem rgba(0, 0, 0, 0.35);
+		}
+
+		.thumb-container:hover {
+			box-shadow: 0 4px 0.8rem rgba(0, 0, 0, 0.5);
+		}
+
+		.evs,
+		.tyler,
+		.privacy-toolkit,
+		.explorations {
+			background-color: white;
+		}
+
+		.online-communities {
+			background-color: #24272d;
+		}
+	}
+
+	.work section {
+		em {
+			background: linear-gradient(180deg, transparent, rgba(75, 105, 135, 0.55));
+		}
+
+		blockquote {
+			color: #d3d7de;
+		}
+
+		&.grey {
+			background-color: #22252a;
+			border-color: #3a3f47;
+		}
+
+		&.evs-banner {
+			background-color: #24222a;
+			background-image: linear-gradient(rgba(108, 92, 128, 0.35), rgba(36, 34, 42, 1));
+
+			h1 {
+				color: #d7cae7;
+			}
+		}
+	}
+
+	.blog-entry .post-date {
+		border-color: #3b4048;
+		background-color: #23262b;
+		color: #c4c9d1;
+	}
+
+	.post-entry {
+		.date,
+		blockquote {
+			color: #b8bec7;
+		}
+	}
+
+	footer {
+		background-color: #0f1114;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.theme-toggle {
+		transition: none;
+	}
+}

@@ -7,6 +7,16 @@
 		<ul class="menu">
 	      <li><a href="{{ '/research' | relative_url }}" class="nav-link">RESEARCH</a></li>
 			<li><a href="{{ '/design' | relative_url }}" class="nav-link">DESIGN</a></li>
+			<li>
+				<button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+					<span class="theme-toggle__light" aria-hidden="true">
+						<img src="{{ '/assets/img/icons/sun.svg' | relative_url }}">
+					</span>
+					<span class="theme-toggle__dark" aria-hidden="true">
+						<img src="{{ '/assets/img/icons/moon.svg' | relative_url }}">
+					</span>
+				</button>
+			</li>
 			<!-- <li><a href="">WRITING</a></li> -->
 		</ul>
 	</nav>
