@@ -32,6 +32,35 @@
   }
 }
 
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+
+  :last-child {
+    text-align: right;
+  }
+
+  > span[aria-hidden="true"] {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    grid-template-columns: 1fr 1fr;
+
+    > span:not([aria-hidden="true"]) {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      text-align: center;
+    }
+  }
+}
+
 .post-entry {
   display: flex;
   flex-direction: column;

@@ -15,14 +15,55 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
+  .carbon-card {
+    margin: 3rem 0 1rem;
+    padding: 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+    text-align: left;
+  }
+  .carbon-card h2 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .carbon-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+  .carbon-stats p {
+    margin: 0;
+  }
+  .carbon-stats strong {
+    display: block;
+    font-size: 1.15rem;
+  }
+  .carbon-note {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
 </style>
 
 <div class="container">
   <h1>404</h1>
 
   <p><strong>Page not found :&lpar;</strong></p>
-  <p>Such a page doesn't exist.</p>
-	<img src="{{ '/assets/img/mobile-selection.gif' | relative_url }}" width="500" height="375" alt="Animated mobile interface selection">
+  <p>Such a page doesn't exist. <a href="/">Go back to the homepage</a>.</p>
 
+  <aside class="carbon-card" aria-labelledby="carbon-heading">
+    <h2 id="carbon-heading">Browsing this site is so light that you could load it 30,000 times before you used the same energy as charging your iPhone once.</h2>
+
+    <p>1,000 user views consumes energy roughly equivalent to one phone charge, or 30 minutes to LED lighting (~0.0043 kWh).</p>
+
+    <p>For comparison, training GPT-5.5 costs at least 12 trillion times of that energy (~50–500 million kWh). If every person on Earth viewed this page once, that would be roughly 8.2 billion total views.</p>
+
+    <div class="carbon-stats">
+      <p><strong>%%CARBON_BUILD_GRAMS%%</strong>to build this %%CARBON_SITE_SIZE%% site in %%CARBON_BUILD_SECONDS%%</p>
+      <p><strong>%%CARBON_PAGE_GRAMS%%</strong>to serve this %%CARBON_PAGE_KB%% page once</p>
+      <p><strong>%%CARBON_THOUSAND_VIEWS_GRAMS%%</strong>for 1,000 views of this page</p>
+    </div>
+
+    <p class="carbon-note">Estimated using a 50 W build machine, 442 g CO₂e/kWh electricity, and 0.114 kWh/GB of data transfer. Last estimated %%CARBON_UPDATED_AT%%.</p>
+  </aside>
 </div>
-

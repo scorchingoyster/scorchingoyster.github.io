@@ -1,61 +1,61 @@
-research:
+academia:
+- {
+  title: 'Youth Online Privacy Conversations',
+  subtitle: 'Sharing Stories and Making Sense of Privacy',
+  year: 2026,
+  folder: 'online-communities',
+  file: 'academia/online-communities'
+}
 - {
   title: 'A Privacy Literacy Toolkit',
   subtitle: 'Empowering Librarians and Communities',
   year: '2023-?',
   folder: 'privacy-toolkit',
-  file: 'research/privacy-toolkit.html'
+  file: 'academia/privacy-toolkit'
 }
-# - {
-#   title: 'Youth Online Community Interactions and Conversations',
-#   subtitle: 'Sharing Stories and Making Sense of Privacy',
-#   year: 2024,
-#   folder: 'online-communities',
-#   file: 'research/online-communities.html'
-# }
 - {
   title: 'Explorations and Other Projects',
   subtitle: 'Ideas in the Making',
   year: '2023-?',
   folder: 'explorations',
-  file: 'research/explorations.html'
+  file: 'academia/explorations'
+}
+
+industry:
+- {
+  title: 'Evalueserve',
+  subtitle: 'Design and Consulting',
+  year: 2019,
+  folder: 'evs',
+  file: 'industry/evs'
 }
 - {
   title: 'Carolina Digital Repository',
   subtitle: 'The Two-Year Journey of a Digital Migration',
   year: 2017,
   folder: 'cdr',
-  file: 'research/cdr.html'
-}
-- {
-  title: 'Munis Delivery App',
-  subtitle: 'My First Journey Into User Experience',
-  year: 2013,
-  folder: 'tyler',
-  file: 'research/tyler.html'
-}
-
-design:
-- {
-  title: 'Evalueserve',
-  subtitle: 'Design and Consulting',
-  year: 2019,
-  folder: 'evs',
-  file: 'design/evs.html'
+  file: 'industry/cdr'
 }
 - {
   title: 'nVisium',
   subtitle: 'Designing for Application Security',
   year: 2014,
   folder: 'nv',
-  file: 'design/nv.html'
+  file: 'industry/nv'
+}
+- {
+  title: 'Munis Delivery App',
+  subtitle: 'My First Journey Into User Experience',
+  year: 2013,
+  folder: 'tyler',
+  file: 'industry/tyler'
 }
 - {
   title: 'Advanced Structure and Composites Center',
   subtitle: 'A Rebranding Campaign Led by Students',
   year: 2012,
   folder: 'ascc',
-  file: 'design/ascc.html'
+  file: 'industry/ascc'
 }
 
 socials:

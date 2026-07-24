@@ -2,9 +2,28 @@
 layout: blog
 title: Hong's somewhat coherent brain dump
 permalink: /blog
+paginate: 8
 ---
 
-{% for post in site.posts %}
+{% for post in page.paginator.posts %}
 <a href="{{ post.url | relative_url }}"><span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> {{ post.title }}</a>
 
 {% endfor %}
+
+{% if page.paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Blog pages">
+  {% if page.paginator.previous_page_path %}
+    <a href="{{ page.paginator.previous_page_path | relative_url }}" rel="prev">&larr; Newer posts</a>
+  {% else %}
+    <span aria-hidden="true">&larr; Newer posts</span>
+  {% endif %}
+
+  <span>Page {{ page.paginator.page }} of {{ page.paginator.total_pages }}</span>
+
+  {% if page.paginator.next_page_path %}
+    <a href="{{ page.paginator.next_page_path | relative_url }}" rel="next">Older posts &rarr;</a>
+  {% else %}
+    <span aria-hidden="true">Older posts &rarr;</span>
+  {% endif %}
+</nav>
+{% endif %}
