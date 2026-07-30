@@ -3,16 +3,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{{ page.description | default: site.description | escape }}">
 	<script>
-		(() => {
-			let savedTheme;
-			try {
-				savedTheme = localStorage.getItem('theme');
-			} catch (error) {
-				savedTheme = null;
-			}
-			const systemTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-			document.documentElement.dataset.theme = savedTheme || systemTheme;
-		})();
+		// (() => {
+		// 	let savedTheme;
+		// 	try {
+		// 		savedTheme = localStorage.getItem('theme');
+		// 	} catch (error) {
+		// 		savedTheme = null;
+		// 	}
+		// 	const systemTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		// 	document.documentElement.dataset.theme = savedTheme || systemTheme;
+		// })();
 	</script>
 	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
