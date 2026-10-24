@@ -8,7 +8,10 @@
     "serve": "bundle exec jekyll serve --livereload",
     "netlify": "netlify",
     "netlify:dev": "netlify dev",
-    "netlify:deploy": "netlify deploy"
+    "netlify:login": "netlify login",
+    "netlify:link": "netlify link",
+    "netlify:deploy": "netlify deploy",
+    "netlify:deploy:prod": "netlify deploy --prod"
   },
   "devDependencies": {
     "netlify-cli": "26.2.0",
